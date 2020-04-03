@@ -1,0 +1,11 @@
+mat-card
+{
+    width: 31%;
+    margin: 0.25%;
+    float: left;
+
+    & img
+    {
+        height: 400px;
+    }
+}

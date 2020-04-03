@@ -1,0 +1,16 @@
+<h1>Nos horaires pour l'année 2020</h1>
+<mat-list>
+    <h3>En semaine :</h3>
+    <article>
+        <mat-list-item *ngFor="let jo of joursOuverts">
+            <div mat-line>{{jo.nom}}: de {{jo.heureDebut}} à {{jo.heureFin}}</div>
+        </mat-list-item>
+    </article>
+    <mat-divider></mat-divider>
+    <h3>Les fermetures exceptionnelles :</h3>
+    <article>
+        <mat-list-item *ngFor="let jf of joursFermes">
+            <div mat-line>{{jf.dateFermeture}}</div>
+        </mat-list-item>
+    </article>
+</mat-list>

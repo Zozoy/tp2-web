@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+
+body { 
+    margin: 0;
+    margin-left: 12px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-image: url('assets/bois.jpg');
+    background-attachment: fixed;
+    background-position: left;
+    background-size: 100%;
+}
+
+article
+{
+    width: fit-content;
+    border-radius: 5px;
+    padding: 12px 10px 1px 10px;
+    background-color: rgba($color: #ffffff, $alpha: 0.75);
+    margin-top: -12px;
+    margin-bottom: 12px;
+}
+
+article p
+{
+    line-height: 22px;
+}
+
+h1, h2
+{
+    padding: 4px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+h3
+{
+    width: fit-content;
+    padding: 2px 8px 2px 8px;
+    border-radius: 5px;
+    color: #be6433;
+    background-color: white;
+}
+
+footer
+{
+    width: 100%;
+    text-align: center;
+}

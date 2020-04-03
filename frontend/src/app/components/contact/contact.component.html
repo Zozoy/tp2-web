@@ -1,0 +1,22 @@
+<h1>Nous contacter</h1>
+<article>
+    <p>Vous pouvez nous envoyer vos questions par e-mail : 
+        <a href="mailto:contact.saucissoy@gmail.com?Subject=Demande%20de%20contact">
+        contact.saucissoy@gmail.com</a>
+    </p>
+    <p>Ou par l'intermédiaire de ce formulaire à remplir :</p>
+</article>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+        <input matInput id="mailfield" placeholder="Votre adresse email">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <input id="passwordfield" type="password" formControlName="password" placeholder="Mot de passe"/>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <button type="submit" [disabled]="form.invalid">Connexion</button>
+    </mat-form-field>
+</form>
