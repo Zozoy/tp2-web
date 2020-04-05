@@ -1,7 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { AgendaService } from 'src/app/services/agenda.service';
+import { Observable } from 'rxjs';
+import { Horaire } from 'src/app/classes/horaire.model';
 
+/*
 export interface SectionJourOuvert {
-  nom: String;
+  periode: String;
   heureDebut: String;
   heureFin: String;
 }
@@ -9,6 +13,7 @@ export interface SectionJourOuvert {
 export interface SectionJourFerme {
   dateFermeture: String;
 }
+*/
 
 @Component({
   selector: 'app-agenda',
@@ -17,10 +22,17 @@ export interface SectionJourFerme {
 })
 export class AgendaComponent implements OnInit {
 
-  constructor() { }
+  joursOuverts: Observable<Horaire[]>;
+  joursFermes:  Observable<string[]>;
+
+  constructor(private aService: AgendaService) { }
 
   ngOnInit(): void {
+    this.joursOuverts = this.aService.findAllHoraires();
+    this.joursFermes = this.aService.findAllFermetures();
   }
+
+/* Code du TP1
 
   // méthode qui génère une date de fermeture exceptionnelle
   // jusqu'à 4 mois avant le numéro de mois en paramètre
@@ -66,4 +78,5 @@ export class AgendaComponent implements OnInit {
       dateFermeture: this.genererDateFermeture(12)
     }
   ];
+*/
 }

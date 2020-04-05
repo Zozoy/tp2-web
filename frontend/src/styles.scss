@@ -2,13 +2,14 @@
 
 html, body { height: 100%; }
 
-body { 
+body
+{ 
     margin: 0;
     margin-left: 12px;
     font-family: Roboto, "Helvetica Neue", sans-serif;
     background-image: url('assets/bois.jpg');
     background-attachment: fixed;
-    background-position: left;
+    background-position: top left;
     background-size: 100%;
 }
 
@@ -36,15 +37,10 @@ h1, h2
 
 h3
 {
+    height: fit-content;
     width: fit-content;
     padding: 2px 8px 2px 8px;
     border-radius: 5px;
     color: #be6433;
     background-color: white;
-}
-
-footer
-{
-    width: 100%;
-    text-align: center;
 }

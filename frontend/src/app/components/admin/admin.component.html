@@ -1,1 +1,8 @@
-<p>admin works!</p>
+<h1>Se connecter</h1>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <input matInput type="mail" formControlName="mail" placeholder="Votre adresse email">
+    <br>
+    <input type="password" formControlName="password" placeholder="Mot de passe"/>
+    <br>
+    <button type="submit" [disabled]="form.invalid">Connexion</button>
+</form>

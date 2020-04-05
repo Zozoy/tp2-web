@@ -7,16 +7,16 @@
     <p>Ou par l'intermédiaire de ce formulaire à remplir :</p>
 </article>
 
-<form [formGroup]="form" (ngSubmit)="onSubmit()">
+<form [formGroup]="form">
     <mat-form-field>
-        <input matInput id="mailfield" placeholder="Votre adresse email">
+        <input matInput id="mailfield" placeholder="Votre adresse email" required>
     </mat-form-field>
     <br>
     <mat-form-field>
-        <input id="passwordfield" type="password" formControlName="password" placeholder="Mot de passe"/>
+        <textarea matInput placeholder="Votre message" required></textarea>
     </mat-form-field>
     <br>
     <mat-form-field>
-        <button type="submit" [disabled]="form.invalid">Connexion</button>
+        <button type="submit" [disabled]="form.invalid">Envoyer</button>
     </mat-form-field>
 </form>

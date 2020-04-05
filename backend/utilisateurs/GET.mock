@@ -1,0 +1,56 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Access-Control-Allow-Origin: *
+
+[
+	{
+	"mail": "alexandre.lecoq@iut-rodez.fr",
+	"username": "ALEXANDRE LECOQ",
+	"password": "fisdjoijf"
+	},
+	{
+	"mail": "gregoire.gagneux@iut-rodez.fr",
+	"username": "GREGOIRE GAGNEUX",
+	"password": "njiondsf"
+	},
+	{
+	"mail": "audric.pouzelgues@iut-rodez.fr",
+	"username": "AUDRIC POUZELGUES",
+	"password": "okzankjf"
+	},
+	{
+	"mail": "kevin.sannac@iut-rodez.fr",
+	"username": "KEVIN SANNAC",
+	"password": "uhvsiubis"
+	},
+	{
+	"mail": "damien.avetta-raymond@iut-rodez.fr",
+	"username": "DAMIEN AVETTA-RAYMOND",
+	"password": "dijzain"
+	},
+	{
+	"mail": "corentin.goyat@iut-rodez.fr",
+	"username": "CORENTIN GOYAT",
+	"password": "jambon"
+	},
+	{
+	"mail": "geoffrey.saint-germain@iut-rodez.fr",
+	"username": "GEOFFREY SAINT-GERMAIN",
+	"password": "jkqibsndkiqd"
+	},
+	{
+	"mail": "jean-roch.auguy@iut-rodez.fr",
+	"username": "JEAN-ROCH AUGUY",
+	"password": "idhoaz"
+	},
+	{
+	"mail": "alexis.vivier@iut-rodez.fr",
+	"username": "ALEXIS VIVIER",
+	"password": "s"
+	},
+	{
+	"mail": "remy.juvenal@iut-rodez.fr",
+	"username": "REMY JUVENAL",
+	"password": "zazda"
+	}
+]

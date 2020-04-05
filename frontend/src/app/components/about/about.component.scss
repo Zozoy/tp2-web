@@ -8,4 +8,17 @@ mat-card
     {
         height: 400px;
     }
+
+    & mat-card-content
+    {
+        & p:last-child
+        {
+            float: right;
+        }
+
+        & b
+        {
+            color: rgb(180, 0, 0);
+        }
+    }
 }

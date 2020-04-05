@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
@@ -37,6 +38,7 @@ import { MapComponent } from './components/map/map.component';
     BrowserAnimationsModule,
 
     ReactiveFormsModule,
+    HttpClientModule,
     
     // modules importés Angular Material
     MatButtonModule,

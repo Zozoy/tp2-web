@@ -1,6 +1,6 @@
 <mat-toolbar>
+  <span>Saucissoy</span>
   <nav>
-    <span>Saucissoy</span>
     <a mat-button routerLink='home'>Accueil</a>
     <a mat-button routerLink='about'>Pourquoi le local ?</a>
     <a mat-button routerLink='infos/map'>Nous trouver</a>
@@ -8,10 +8,12 @@
     <a mat-button routerLink='infos/contact'>Nous contacter</a>
     <a mat-button routerLink='admin'>Administration</a>
   </nav>
+  <!-- Le clic remet la barre de navigation dans son état d'origine -->
+  <button mat-button id="disconnect" onclick="
+      document.getElementsByTagName('nav')[0].setAttribute('style', 'display: block;');
+      document.getElementsByTagName('span')[0].innerHTML = 'Saucissoy';
+      document.getElementById('disconnect').setAttribute('style', 'display: none');">
+      Se déconnecter</button>
 </mat-toolbar>
 
 <router-outlet></router-outlet>
-
-<footer>
-  <h3>Réalisé par Corentin Goyat</h3>
-</footer>

@@ -1,0 +1,42 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Access-Control-Allow-Origin: *
+
+[
+	{
+		"name":		"Saucisson des bois",
+		"img":		"saucissondesbois.jpg",
+		"desc": 	"Un mélange de viandes champêtre aux senteurs enivrantes de hêtre et de cardamome.",
+		"prixht":	18.90
+	},
+	{
+		"name":		"Sauciflade de sanglier",
+		"img":		"saucissesanglier.jpg",
+		"desc": 	"Un agrégat de jambon sauvage à la saveur musquée, compressé traditionnellement au moulin.",
+		"prixht":	24.50
+	},
+	{
+		"name":		"Saucisson à l'ancienne des alpages",
+		"img":		"saucissonrustique.jpg",
+		"desc": 	"La combinaison savante de la menthe des Alpes et du caribou fermenté.",
+		"prixht":	26.90
+	},
+	{
+		"name":		"Saucissard de cheval de Lacaune",
+		"img":		"saucissoncheval.jpg",
+		"desc": 	"Un reqroupement de savoirs-faire du terroir, lié au fumet âpre du cheval de trait.",
+		"prixht":	22.80
+	},
+	{
+		"name":		"Crousti-ciboulettes",
+		"img":		"crousticiboulettes.jpg",
+		"desc": 	"Une délicate conjonction au charme herbacé, sublimé par l'entrecôte de ragondin.",
+		"prixht":	35.90
+	},
+	{
+		"name":		"Cyclo-pains viandés",
+		"img":		"cyclopainsviandes.jpg",
+		"desc": 	"L'héritage d'un millénaire d'élevage de porcs en cave dans le Limousin.",
+		"prixht":	30.00
+	}
+]
